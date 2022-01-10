@@ -1,5 +1,5 @@
 import { LinksFunction } from 'remix'
-import Terminal from '../components/Terminal'
+import Terminal from '../components/terminal'
 import styles from '~/styles/global.css'
 import terminalStyles from '~/styles/terminal.css'
 import commandStyles from '~/styles/command.css'
