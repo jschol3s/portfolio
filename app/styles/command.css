@@ -1,0 +1,29 @@
+.command {
+  display: flex;
+  gap: 0.5em;
+}
+
+.terminal-input {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-family: monospace;
+  line-height: 1.5;
+  margin-top: 1em;
+}
+
+.terminal-input:focus {
+  outline: none;
+}
+
+.terminal-output {
+  height: fit-content;
+  white-space: break-spaces;
+}
+
+.social-link {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}

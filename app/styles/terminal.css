@@ -1,0 +1,56 @@
+.terminal {
+  border: 1px solid rgb(146, 144, 144);
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(51, 51, 51);
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+  overflow: auto;
+  height: max(60vh, 300px);
+  width: max(70vw, 450px);
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #fff;
+  background: #333;
+  padding: 0.5em;
+  padding-right: 41%;
+  border-bottom: 1px solid #ccc;
+}
+
+.terminal-body {
+  text-align: start;
+  padding: 0.5em;
+}
+
+.circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 2px;
+  background: #fff;
+}
+
+.circle-red {
+  background: #fe6056;
+}
+
+.circle-yellow {
+  background: #febb2f;
+}
+
+.circle-green {
+  background: #26c740;
+}
+
+@media (min-width: 640px) {
+  .terminal {
+    max-width: none;
+  }
+}
