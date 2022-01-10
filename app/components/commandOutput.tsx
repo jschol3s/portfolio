@@ -90,9 +90,9 @@ export const Help = () => {
       <br />
       <b>clear</b> - clear the terminal
       <br />
-      <b>help</b> - view the help message
+      <b>welcome</b> - view the welcome message
       <br />
-      <b>welcome</b> - view the welcome message (this message)
+      <b>help</b> - view the help message (this message)
     </p>
   )
 }
