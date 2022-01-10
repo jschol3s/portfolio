@@ -1,5 +1,11 @@
 # Welcome to the source code of my portfolio website!
 
+### This project isn't quite finished. I'm working on completing the initial page
+
+### visit experience, and the contact functionality. When you first visit the page
+
+### type 'welcome' and press enter.
+
 This was created using React and Remix.
 I had a ton of fun making it, and I'm happy with how it turned out!
 I thought it would be neat to try to recreate the style and functionality of the macOS terminal but
