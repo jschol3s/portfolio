@@ -1,34 +1,15 @@
-# Welcome to Remix!
+# Welcome to the source code of my portfolio website!
 
-- [Remix Docs](https://remix.run/docs)
+This was created using React and Remix.
+I had a ton of fun making it, and I'm happy with how it turned out!
+I thought it would be neat to try to recreate the style and functionality of the macOS terminal but
+as a portfolio website.
+If you have any suggestions on how I could improve it or features I could add, I'd love to hear them!
 
-## Deployment
-
-After having run the `create-remix` command and selected "Vercel" as a deployment target, you only need to [import your Git repository](https://vercel.com/new) into Vercel, and it will be deployed.
-
-If you'd like to avoid using a Git repository, you can also deploy the directory by running [Vercel CLI](https://vercel.com/cli):
-
-```sh
-npm i -g vercel
-vercel
-```
-
-It is generally recommended to use a Git repository, because future commits will then automatically be deployed by Vercel, through its [Git Integration](https://vercel.com/docs/concepts/git).
-
-## Development
-
-To run your Remix app locally, make sure your project's local dependencies are installed:
-
-```sh
-npm install
-```
-
-Afterwards, start the Remix development server like so:
-
-```sh
-npm run dev
-```
-
-Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
-
-If you're used to using the `vercel dev` command provided by [Vercel CLI](https://vercel.com/cli) instead, you can also use that, but it's not needed.
+I ran into an interesting render issue when creating this. I originally was trying to store JSX element
+components in the state for the commands. Everything seemed to work fine doing it this way until I tried
+to implement the clear functionality. It would clear all the commands except for the first one. Instead of
+completely clearing the component to be a fresh new one, it would remember the state it was in before it was
+'cleared'. The output would remain what it originally was. This was some pretty weird rendering behavior that
+took me a while to get my head around. Eventually, I realized I needed to take a new approach, which is when
+I switched things to the way they are now, which is using ID's for the state, and not just JSX elements.

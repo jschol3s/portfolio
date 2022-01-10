@@ -1,5 +1,5 @@
 import { format } from 'date-fns'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { LinksFunction } from 'remix'
 import Command from './command'
 import terminalStyles from '~/styles/terminal.css'
@@ -12,7 +12,7 @@ const genId = () => {
   return Date.now()
 }
 
-export default function terminal() {
+const terminal = () => {
   const [commands, setCommands] = useState<{ id: number }[]>([{ id: genId() }])
 
   const addNewPrompt = () => {
@@ -23,7 +23,6 @@ export default function terminal() {
     setCommands([{ id: genId() }])
   }
 
-  const delay = (ms: number) => new Promise((res) => setTimeout(res, ms))
   const date = format(new Date(), 'E MMM  d K:mm:ss')
 
   return (
@@ -49,3 +48,5 @@ export default function terminal() {
     </div>
   )
 }
+
+export default terminal
