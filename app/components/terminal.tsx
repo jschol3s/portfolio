@@ -37,6 +37,9 @@ const terminal = () => {
       </div>
       <div className='terminal-body'>
         <div className='login'>Last login: {date}</div>
+        <div className='welcome'>
+          Type <b>welcome</b> and press enter to get started
+        </div>
         {commands?.map((CommandState) => (
           <Command
             key={CommandState.id}

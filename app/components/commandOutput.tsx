@@ -1,7 +1,12 @@
+// import sgMail from '@sendgrid/mail'
+// import dotenv from 'dotenv'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { Form } from 'remix'
+
+// dotenv.config()
 
 export const Welcome = () => {
   return (
@@ -63,7 +68,22 @@ export const Social = () => {
 }
 
 export const Contact = () => {
-  return <p>contact me</p>
+  return (
+    <Form method='post' action='/contact'>
+      <label>
+        Name
+        <input type='text' name='name' />
+      </label>
+      <label>
+        Email
+        <input type='email' name='email' />
+      </label>
+      <label>
+        Message <input type='text' name='message' />
+      </label>
+      <input type='submit' />
+    </Form>
+  )
 }
 
 export const Source = () => {
@@ -84,8 +104,8 @@ export const Help = () => {
       <br />
       <b>social</b> - Social links
       <br />
-      <b>contact</b> - Send me an email
-      <br />
+      {/* <b>contact</b> - Send me an email
+      <br /> */}
       <b>source</b> - View the source code
       <br />
       <b>clear</b> - clear the terminal

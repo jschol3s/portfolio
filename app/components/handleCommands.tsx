@@ -36,10 +36,11 @@ export function handleCommands(
       setOutput(<Social />)
       props.addNewPrompt()
       break
-    case 'contact':
-      setOutput(<Contact />)
-      props.addNewPrompt()
-      break
+    // TODO: Implement contact feature
+    // case 'contact':
+    //   setOutput(<Contact />)
+    //   props.addNewPrompt()
+    //   break
     case 'source':
       setOutput(<Source />)
       props.addNewPrompt()
