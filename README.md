@@ -1,11 +1,5 @@
 # Welcome to the source code of my portfolio website!
 
-### This project isn't quite finished. I'm working on completing the initial page
-
-### visit experience, and the contact functionality. When you first visit the page
-
-### type 'welcome' and press enter.
-
 This was created using React and Remix.
 I had a ton of fun making it, and I'm happy with how it turned out!
 I thought it would be neat to try to recreate the style and functionality of the macOS terminal but
@@ -19,3 +13,5 @@ completely clearing the component to be a fresh new one, it would remember the s
 'cleared'. The output would remain what it originally was. This was some pretty weird rendering behavior that
 took me a while to get my head around. Eventually, I realized I needed to take a new approach, which is when
 I switched things to the way they are now, which is using ID's for the state, and not just JSX elements.
+
+Note: I'm still making changes to this project. I'm hoping to implement a contact feature with the sendgrid api, and an initial page load animation.
