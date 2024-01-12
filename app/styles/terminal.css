@@ -1,3 +1,15 @@
+@property --gradient-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+:root {
+  --clr-1: #1c0e50;
+  --clr-2: #492d8f;
+  --clr-3: #65638c;
+}
+
 .terminal {
   border: 1px solid rgb(146, 144, 144);
   background: rgb(0, 0, 0);
@@ -10,6 +22,37 @@
   overflow: auto;
   height: max(60vh, 300px);
   width: max(70vw, 450px);
+}
+
+.terminal::before,
+.terminal::after {
+  content: '';
+  position: absolute;
+  inset: -0.5rem;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-1),
+    var(--clr-2),
+    var(--clr-3),
+    var(--clr-2),
+    var(--clr-1)
+  );
+  border-radius: inherit;
+  animation: rotation 10s linear infinite;
+}
+
+.terminal::after {
+  filter: blur(3.5rem);
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
 }
 
 .terminal-header {
