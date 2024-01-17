@@ -136,7 +136,7 @@ function App() {
         lineNumber: 19,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ jsxDEV2("meta", { name: "viewport", content: "width=device-width,initial-scale=1" }, void 0, !1, {
+      /* @__PURE__ */ jsxDEV2("meta", { name: "viewport", content: "width=device-width, initial-scale=1" }, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 20,
         columnNumber: 9
@@ -175,7 +175,7 @@ function App() {
       /* @__PURE__ */ jsxDEV2(LiveReload, {}, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 28,
-        columnNumber: 52
+        columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
@@ -192,9 +192,9 @@ function App() {
 // app/routes/contact.tsx
 var contact_exports = {};
 
-// app/routes/index.tsx
-var routes_exports = {};
-__export(routes_exports, {
+// app/routes/_index.tsx
+var index_exports = {};
+__export(index_exports, {
   default: () => Index,
   links: () => links
 });
@@ -644,7 +644,7 @@ var genId = () => Date.now(), terminal = () => {
 // app/styles/global.css
 var global_default = "/build/_assets/global-SU42BMSB.css";
 
-// app/routes/index.tsx
+// app/routes/_index.tsx
 import { jsxDEV as jsxDEV7 } from "react/jsx-dev-runtime";
 var links = () => [
   { rel: "stylesheet", href: global_default },
@@ -653,18 +653,18 @@ var links = () => [
 ];
 function Index() {
   return /* @__PURE__ */ jsxDEV7("div", { children: /* @__PURE__ */ jsxDEV7(terminal_default2, {}, void 0, !1, {
-    fileName: "app/routes/index.tsx",
+    fileName: "app/routes/_index.tsx",
     lineNumber: 18,
     columnNumber: 7
   }, this) }, void 0, !1, {
-    fileName: "app/routes/index.tsx",
+    fileName: "app/routes/_index.tsx",
     lineNumber: 17,
     columnNumber: 5
   }, this);
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-G27W2MXU.js", imports: ["/build/_shared/chunk-JWDJ5HLB.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-ZHRNAVU5.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-PMYI7LY3.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-WTQNCF3S.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: "index", index: void 0, caseSensitive: void 0, module: "/build/routes/index-MXU6HVNE.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "ccfd859c", hmr: { runtime: "/build/_shared/chunk-ZHRNAVU5.js", timestamp: 1705529105536 }, url: "/build/manifest-CCFD859C.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-WTR3XZX6.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-JWDJ5HLB.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-ZHRNAVU5.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-GXW2QFHJ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-377VEJJ7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 }, "routes/contact": { id: "routes/contact", parentId: "root", path: "contact", index: void 0, caseSensitive: void 0, module: "/build/routes/contact-WTQNCF3S.js", imports: void 0, hasAction: !1, hasLoader: !1, hasClientAction: !1, hasClientLoader: !1, hasErrorBoundary: !1 } }, version: "0cca609b", hmr: { runtime: "/build/_shared/chunk-ZHRNAVU5.js", timestamp: 1705530809589 }, url: "/build/manifest-0CCA609B.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var mode = "development", assetsBuildDirectory = "public/build", future = { v3_fetcherPersist: !1, v3_relativeSplatPath: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -684,13 +684,13 @@ var mode = "development", assetsBuildDirectory = "public/build", future = { v3_f
     caseSensitive: void 0,
     module: contact_exports
   },
-  "routes/index": {
-    id: "routes/index",
+  "routes/_index": {
+    id: "routes/_index",
     parentId: "root",
-    path: "index",
-    index: void 0,
+    path: void 0,
+    index: !0,
     caseSensitive: void 0,
-    module: routes_exports
+    module: index_exports
   }
 };
 export {
