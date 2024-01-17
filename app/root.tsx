@@ -5,11 +5,11 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from 'remix'
-import type { MetaFunction } from 'remix'
+} from '@remix-run/react'
+import type { MetaFunction } from '@remix-run/react'
 
 export const meta: MetaFunction = () => {
-  return { title: 'Jadon Scholes' }
+  return [{ title: 'Jadon Scholes' }]
 }
 
 export default function App() {

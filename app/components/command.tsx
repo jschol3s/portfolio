@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { LinksFunction } from 'remix'
+import { LinksFunction } from '@remix-run/node'
 import { handleCommands } from './handleCommands'
 import commandStyles from '~/styles/command.css'
 

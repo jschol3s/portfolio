@@ -1,4 +1,4 @@
-import { LinksFunction } from 'remix'
+import { LinksFunction } from '@remix-run/node'
 import Terminal from '../components/terminal'
 import styles from '~/styles/global.css'
 import terminalStyles from '~/styles/terminal.css'
